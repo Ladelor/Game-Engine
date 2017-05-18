@@ -86,8 +86,8 @@ namespace NumberOne { namespace Graphics {
 		memcpy(w_buttonsPressed, w_buttons, MAX_BUTTONS);
 		memcpy(w_keysPressed, w_keys, MAX_KEYS);
 
-		GLenum err = glGetError();
-		if (err != GL_NO_ERROR)
+	//	GLenum err = glGetError();
+		if (GLenum err = glGetError())
 			std::cout << "OpenGL error: " << err;
 		glfwPollEvents();	//Event Handler
 		glfwSwapBuffers(w_Window);

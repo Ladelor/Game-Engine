@@ -61,6 +61,7 @@ namespace NumberOne {
 		bool SoundManager::removeSound(int sound)
 		{
 			if (sound > sm_numSounds)
+				//error
 				return true;
 			FMOD::Sound* tempSound;
 			tempSound = *(sm_Sounds.begin() + (sound - 1));
@@ -85,6 +86,7 @@ namespace NumberOne {
 		bool SoundManager::playSound(int sound, int loop)
 		{
 			if (sound > sm_numSounds)
+				//error
 				return true;
 			if (loop != 0)
 				sm_Sounds[sound - 1]->setLoopCount(loop);
@@ -108,6 +110,7 @@ namespace NumberOne {
 		bool SoundManager::resumeSound(int sound)
 		{
 			if (sound > sm_numSounds)
+				//error
 				return true;
 			sm_Channels[sound - 1]->setPaused(false);
 			return false;
@@ -116,6 +119,7 @@ namespace NumberOne {
 		bool SoundManager::setVolume(int sound, float volume)
 		{
 			if (sound > sm_numSounds)
+				//error
 				return true;
 			sm_Channels[sound - 1]->setVolume(volume);
 			return false;

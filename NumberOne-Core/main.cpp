@@ -2,16 +2,6 @@
 #include "Graphics.h"
 #include "SoundManager.h"
 
-#if 0
-int main()
-{
-}
-
-#endif
-
-
-
-
 #if	1
 int main()
 {
@@ -112,7 +102,7 @@ int main()
 		Window.getMousePos(x, y);
 		shader.setUniform2f("light_pos", Math::vec2((float)(-16 + x * 32.0f / 960.0f), (float)(9 - y * 18.0f / 540.0f)));
 		
-		//layer.render();
+		layer.render();
 		
 		/*
 		particles[frames].p_life = 1.0f;
@@ -124,7 +114,7 @@ int main()
 			particles[i].p_vertexData.v_position.x += (particles[i].p_velocity.x / 10000);
 			particles[i].p_vertexData.v_position.y += (particles[i].p_velocity.y / 10000);
 		}
-
+a
 
 		for (int i = 0; i < frames; i++)
 		{

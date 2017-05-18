@@ -89,16 +89,16 @@
     <ClCompile Include="ParticleRenderer.cpp">
       <Filter>Graphics\Renderers</Filter>
     </ClCompile>
-    <ClCompile Include="..\ext\freetype-gl\platform.c">
+    <ClCompile Include="..\..\..\Libraries\FreeType-GL 2015\platform.c">
       <Filter>External\Freetype-GL</Filter>
     </ClCompile>
-    <ClCompile Include="..\ext\freetype-gl\texture-atlas.c">
+    <ClCompile Include="..\..\..\Libraries\FreeType-GL 2015\texture-atlas.c">
       <Filter>External\Freetype-GL</Filter>
     </ClCompile>
-    <ClCompile Include="..\ext\freetype-gl\texture-font.c">
+    <ClCompile Include="..\..\..\Libraries\FreeType-GL 2015\texture-font.c">
       <Filter>External\Freetype-GL</Filter>
     </ClCompile>
-    <ClCompile Include="..\ext\freetype-gl\vector.c">
+    <ClCompile Include="..\..\..\Libraries\FreeType-GL 2015\vector.c">
       <Filter>External\Freetype-GL</Filter>
     </ClCompile>
   </ItemGroup>
@@ -187,29 +187,29 @@
     <ClInclude Include="ParticleRenderer.h">
       <Filter>Graphics\Renderers</Filter>
     </ClInclude>
-    <ClInclude Include="..\ext\freetype-gl\freetype-gl.h">
-      <Filter>External\Freetype-GL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ext\freetype-gl\opengl.h">
-      <Filter>External\Freetype-GL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ext\freetype-gl\platform.h">
-      <Filter>External\Freetype-GL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ext\freetype-gl\texture-atlas.h">
-      <Filter>External\Freetype-GL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ext\freetype-gl\texture-font.h">
-      <Filter>External\Freetype-GL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ext\freetype-gl\vec234.h">
-      <Filter>External\Freetype-GL</Filter>
-    </ClInclude>
-    <ClInclude Include="..\ext\freetype-gl\vector.h">
-      <Filter>External\Freetype-GL</Filter>
-    </ClInclude>
     <ClInclude Include="Particle.h">
       <Filter>Graphics\Renderers\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\freetype-gl.h">
+      <Filter>External\Freetype-GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\opengl.h">
+      <Filter>External\Freetype-GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\platform.h">
+      <Filter>External\Freetype-GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\texture-atlas.h">
+      <Filter>External\Freetype-GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\texture-font.h">
+      <Filter>External\Freetype-GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\vec234.h">
+      <Filter>External\Freetype-GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\vector.h">
+      <Filter>External\Freetype-GL</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

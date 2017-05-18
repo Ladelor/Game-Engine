@@ -145,10 +145,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\ext\freetype-gl\platform.c" />
-    <ClCompile Include="..\ext\freetype-gl\texture-atlas.c" />
-    <ClCompile Include="..\ext\freetype-gl\texture-font.c" />
-    <ClCompile Include="..\ext\freetype-gl\vector.c" />
+    <ClCompile Include="..\..\..\Libraries\FreeType-GL 2015\platform.c" />
+    <ClCompile Include="..\..\..\Libraries\FreeType-GL 2015\texture-atlas.c" />
+    <ClCompile Include="..\..\..\Libraries\FreeType-GL 2015\texture-font.c" />
+    <ClCompile Include="..\..\..\Libraries\FreeType-GL 2015\vector.c" />
     <ClCompile Include="BatchRenderer2D.cpp" />
     <ClCompile Include="Label.cpp" />
     <ClCompile Include="LabelManager2D.cpp" />
@@ -168,13 +168,13 @@
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\ext\freetype-gl\freetype-gl.h" />
-    <ClInclude Include="..\ext\freetype-gl\opengl.h" />
-    <ClInclude Include="..\ext\freetype-gl\platform.h" />
-    <ClInclude Include="..\ext\freetype-gl\texture-atlas.h" />
-    <ClInclude Include="..\ext\freetype-gl\texture-font.h" />
-    <ClInclude Include="..\ext\freetype-gl\vec234.h" />
-    <ClInclude Include="..\ext\freetype-gl\vector.h" />
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\freetype-gl.h" />
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\opengl.h" />
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\platform.h" />
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\texture-atlas.h" />
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\texture-font.h" />
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\vec234.h" />
+    <ClInclude Include="..\..\..\Libraries\FreeType-GL 2015\vector.h" />
     <ClInclude Include="BatchRenderer2D.h" />
     <ClInclude Include="FileRead.h" />
     <ClInclude Include="FileUtilities.h" />
