@@ -20,6 +20,13 @@ int main()
 
 	Graphics::TileLayer layer(&shader);
 	Graphics::Group* group = new Graphics::Group(Math::mat4::rotation(45.0f, Math::vec3(0, 0, 1)));
+	
+	Graphics::LabelManager2D* fm = new Graphics::LabelManager2D();
+	Graphics::Label test("Hello World!", -10, -4, 60, 0xaa44ff00, FONT_TIMES_NEW);
+	Graphics::Label test2("Test 2", 0, 0, 70, Math::vec4(1.0f, .0f, .0f, 1.0f), FONT_TIMES_NEW);
+	group->add(fm);
+	fm->add(&test);
+	fm->add(&test2);
 
 	Graphics::Texture* textures[] =
 	{
@@ -28,27 +35,27 @@ int main()
 		new Graphics::Texture("tc.png")
 
 	};
-		
+
 	for (float y = -9.0f; y < 9.0f; y += 1)
 	{
 		for (float x = -16.0f; x < 16.0f; x += 1)
 		{
 			//layer.add(new Graphics::Sprite(x, y, 0.15f, 0.2f, Math::vec4(.1f, rand() % 1000 / 1000.0f, .1f, 1.0f))); 
-			if (rand() % 4 == 0)
+		//	if (rand() % 4 == 0)
 				layer.add(new Graphics::Sprite(x, y, .5f, .5f, 0xffffff00));
-			else
-				layer.add(new Graphics::Sprite(x, y, .5f, .5f, textures[rand() % 3]));
+		//	else
+				layer.add(new Graphics::Sprite(x, y, .5f, .5f, textures[0]));
+				layer.add(new Graphics::Sprite(x, y + .5f, .25f, .25f, textures[1]));
+				layer.add(new Graphics::Sprite(x+ .5f, y + .5f, .25f, .25f, textures[2]));
+
 		}
 	}
+
+	layer.add(new Graphics::Sprite(0, 0, 10.0f, 10.0f, 0x886666aa));
 		
+	layer.add(group);
 		
-	Graphics::LabelManager2D* fm = new Graphics::LabelManager2D();
-	Graphics::Label test("Hello World!", -10, -4, 60, 0xaa44ff00, FONT_TIMES_NEW);
-	Graphics::Label test2("Test 2", 0, 0, 70, Math::vec4(1.0f, .0f, .0f, 1.0f), FONT_TIMES_NEW);
-	group->add(fm);
-	fm->add(&test);
-	fm->add(&test2);
-	
+/*	
 	Graphics::Particle particles[10000];
 	for (int i = 0; i < 10000; i++)
 	{
@@ -56,15 +63,14 @@ int main()
 	}
 
 	Graphics::ParticleRenderer pr(10000);
-
-	layer.add(group);
-
+	*/
+	
 	GLint texIDs[] =
 	{
 		0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 	};
 
-//	shader.setUniform1iv("textures", texIDs, 10);
+	shader.setUniform1iv("textures", texIDs, 10);
 
 	
 	Timer time;
@@ -129,9 +135,9 @@ a
 		frames++;
 	}
 
-	delete textures[0];
-	delete textures[1];
-	delete textures[2];
+//	delete textures[0];
+//	delete textures[1];
+//	delete textures[2];
 
 	return 0;
 }

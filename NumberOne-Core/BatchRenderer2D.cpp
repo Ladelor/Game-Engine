@@ -124,7 +124,7 @@ namespace NumberOne {
 			glUnmapBuffer(GL_ARRAY_BUFFER);
 			glBindBuffer(GL_ARRAY_BUFFER, 0);
 
-			for (unsigned int i = 0; i < r_textures.size(); i++)
+			for (unsigned int i = 0; i < r_textures.size(); ++i)
 			{
 				glActiveTexture(GL_TEXTURE0 + i);
 				glBindTexture(GL_TEXTURE_2D, r_textures[i]);
@@ -133,8 +133,9 @@ namespace NumberOne {
 
 			glBindVertexArray(r_vao);
 			r_ibo->enable();
-
+			
 			glDrawElements(GL_TRIANGLES, r_indexCount, GL_UNSIGNED_SHORT, 0);
+
 			r_ibo->disable();
 			glBindVertexArray(0);
 			r_indexCount = 0;

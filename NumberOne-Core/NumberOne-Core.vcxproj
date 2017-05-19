@@ -208,7 +208,6 @@
   <ItemGroup>
     <None Include="basic.frag" />
     <None Include="basic.vert" />
-    <None Include="basic2.frag" />
     <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
